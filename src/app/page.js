@@ -130,9 +130,9 @@ export default function Home() {
                   <p className="text-[var(--color-muted)] font-bold text-sm uppercase tracking-wider mb-2">Total Workouts</p>
                   <p className="text-5xl font-black text-[var(--color-foreground)]">{loading ? '-' : stats.workouts}</p>
                 </div>
-                <div className="w-16 h-16 rounded-2xl bg-[rgba(0,53,71,0.1)] dark:bg-[rgba(194,187,0,0.1)] flex items-center justify-center text-[var(--color-primary)] dark:text-[var(--color-tertiary)]">
-                  <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 4h12M6 20h12M12 4v16M4 8h16M4 16h16" /></svg>
-                </div>
+                {/* <div className="w-16 h-16 rounded-2xl bg-[rgba(0,53,71,0.1)] dark:bg-[rgba(194,187,0,0.1)] flex items-center justify-center text-[var(--color-primary)] dark:text-[var(--color-tertiary)]"> */}
+                  {/* <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 4h12M6 20h12M12 4v16M4 8h16M4 16h16" /></svg> */}
+                {/* </div> */}
              </div>
 
              {/* Stat Card 2 */}
@@ -141,31 +141,31 @@ export default function Home() {
                   <p className="text-[var(--color-muted)] font-bold text-sm uppercase tracking-wider mb-2">Saved Routines</p>
                   <p className="text-5xl font-black text-[var(--color-foreground)]">{loading ? '-' : stats.routines}</p>
                 </div>
-                <div className="w-16 h-16 rounded-2xl bg-[rgba(237,139,22,0.1)] flex items-center justify-center text-[var(--color-warning)]">
-                   <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </div>
+                {/* <div className="w-16 h-16 rounded-2xl bg-[rgba(237,139,22,0.1)] flex items-center justify-center text-[var(--color-warning)]"> */}
+                   {/* <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6h16M4 12h16M4 18h7" /></svg> */}
+                {/* </div> */}
              </div>
           </div>
 
           <h2 className="text-xl font-bold mb-4 text-[var(--color-foreground)]">Quick Actions</h2>
           <div className="grid sm:grid-cols-2 gap-5 mb-10">
               <Link href="/workouts" className="group human-panel p-6 flex items-center gap-5 border-2 border-transparent hover:bg-primary transition-all duration-300">
-                  <div className="bg-gray-100 dark:bg-gray-800 group-hover:bg-[rgba(255,255,255,0.2)] rounded-full p-4 transition-colors">
+                  <div className="bg-gray-100 dark:bg-gray-800 group-hover:bg-[rgba(149,60,60,0.2)] rounded-full p-4 transition-colors">
                      <svg width="24" height="24" className="text-[var(--color-primary)] dark:text-gray-300 group-hover:text-white" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12h14" /></svg>
                   </div>
-                  <div className="group-hover:text-white">
+                  <div className="group-hover:text-amber">
                       <p className="font-bold text-lg mb-0.5">Create a Workout</p>
-                      <p className="text-sm text-[var(--color-muted)] group-hover:text-[rgba(255,255,255,0.7)]">Add a new exercise to your library</p>
+                      <p className="text-sm text-[var(--color-muted)] group-hover:text-[rgba(140,30,30,0.7)]">Add a new exercise to your library</p>
                   </div>
               </Link>
               
               <Link href="/routines" className="group human-panel p-6 flex items-center gap-5 border-2 border-transparent hover:bg-secondary transition-all duration-300">
-                  <div className="bg-gray-100 dark:bg-gray-800 group-hover:bg-[rgba(255,255,255,0.2)] rounded-full p-4 transition-colors">
+                  <div className="bg-gray-100 dark:bg-gray-800 group-hover:bg-[rgba(183,55,55,0.2)] rounded-full p-4 transition-colors">
                      <svg width="24" height="24" className="text-[var(--color-secondary)] dark:text-gray-300 group-hover:text-white" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12h14" /></svg>
                   </div>
-                  <div className="group-hover:text-white">
+                  <div className="group-hover:text-amber">
                       <p className="font-bold text-lg mb-0.5">Build a Routine</p>
-                      <p className="text-sm text-[var(--color-muted)] group-hover:text-[rgba(255,255,255,0.7)]">Group your workouts together</p>
+                      <p className="text-sm text-[var(--color-muted)] group-hover:text-[rgba(210,67,67,0.7)]">Group your workouts together</p>
                   </div>
               </Link>
           </div>
